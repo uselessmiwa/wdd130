@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Marvel&display=swap');
+
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    padding: 35px;
+}
+
+nav a:hover {
+    background-color: #014bad;
+    color: black;
+}
+
+main section {
+    text-align: center;
+}
+
+main section img {
+    box-sizing: border-box;
+}
+
+.logo {
+    width: 100px;
+}
+
+#logo_link {
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+}
+
+h2 {
+    font-family: 'Aboreto', Helvetica, sans-serif;
+}
+
+body {
+    background-color: #FCFBFB;
+    font-family: 'Marvel', Helvetica, sans-serif;
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 150px auto;
+    background-color: #014bad;
+}
+
+#dragon-academy {
+    width: 100%;
+}
+
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+.home-paragraph1 {
+    grid-column: 2/6;
+    grid-row: 2/5;
+    background-color: #B3AF8F;
+    margin: 100px 0;
+    padding: 10px;
+    z-index: 1;
+    box-shadow: 5px 5px 10px #6f7364;
+    border-radius: 5px;
+}
+
+.esports {
+    grid-column: 6/10;
+    grid-row: 2/5;
+    margin: 200px 0;
+}
+
+.dragonflight {
+    grid-column: 2/6;
+    grid-row: 6/10;
+    margin: 200px 0;
+}
+
+.home-paragraph2 {
+    grid-column: 6/10;
+    grid-row: 6/10;
+    background-color: #B3AF8F;
+    margin: 100px 0;
+    padding: 10px;
+    z-index: 1;
+    box-shadow: 5px 5px 10px #6f7364;
+    border-radius: 5px;
+}
+
+.gaming-line, .df-loading-screen {
+    display: flex;
+    width: 100%;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+
+footer {
+    background-color: #014BAD;
+    padding: 25px 50px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer a {
+    font-family: 'Marvel', Helvetica, sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+footer p {
+    font-size: 1.2em;
+}
+
+footer a:hover {
+    color: black;
+}
