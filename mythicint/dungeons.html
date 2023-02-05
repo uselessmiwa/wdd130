@@ -31,40 +31,56 @@
             <p>For example, say I get a Keystone for Court of Stars Dungeon at +4 difficulty. That will give me 2 affixes and be considered 4 levels tougher than a plain Mythic Dungeon, 5 levels tougher than a Heroic Dungeon, and 6 levels tougher than a Normal Dungeon.</p>
             <p>An affix is a modifier applied to a mythic keystone at set levels. Different combinations occur every week, with the combinations repeating on a set schedule.</p>
         </section>
-        <section class="affixes-2">
-            <h4>Level 2 Affixes</h4>
+        <button class="accordion">Level 2 Affixes</button>
+        <div class="affixes-2">
             <img class="blue-icon" src="images/blueicon.jpg" alt="blue orb icon">
             <p><b>Fortified</b> : Non-bosses have more health and deal 30% more damage.</p>
             <p><b>Tyrannical</b>  : Bosses have 30% more health and deal 15% more damage.</p>
-        </section>
-        <section class="affixes-4">
-            <h4>Level 4 Affixes</h4>
+        </div>
+        <button class="accordion">Level 4 Affixes</button>
+        <div class="affixes-4">
             <img class="mechicon" src="images/mechicon.jpg" alt="mech cog icon">
             <p><b>Bolstering</b>  : Non-boss enemies buff nearby allies on death, increasing maximum health by 15% and damage by 20%.</p>
             <p><b>Bursting</b>  : Non-boss enemies explode on death, causing all players to suffer flag damage that scales with keystone level.</p>
             <p><b>Raging</b>  : Non-boss enemies enrage at 30% health, dealing 75% increased damage until killed.</p>
             <p><b>Sanguine</b>  : Non-boss enemies will leave a pool on the ground on death. This pool heals enemies and damages players for a percentage of their maximum health.</p>
             <p><b>Spiteful</b>  : Spirits rise from the corpses of non-boss enemies and chase down random players, dealing heavy melee damage.</p>
-        </section>
-        <section class="affixes-7">
-            <h4>Level 7 Affixes</h4>
+        </div>
+        <button class="accordion">Level 7 Affixes</button>
+        <div class="affixes-7">
             <img class="spearicon" src="images/spearicon.jpg" alt="spear icon">
             <p><b>Explosive</b>  : Enemies have a chance to summon an Explosive Orb nearby that will explode after six seconds, inflicting damage 40% of the player’s maximum health as damage.</p>
             <p><b>Grievous</b> : While below 90% health, players are afflicted with Grievous Wound (ticking bleed damage).</p>
             <p><b>Quaking</b>  : Players will periodically Quake, interrupting spell casts of the player, Nearby allies take 40% of their maximum health as damage.</p>
             <p><b>Storming</b>  : Tornadoes spawn around enemy creatures while in combat.</p>
             <p><b>Volcanic</b>  : Enemies cause eruptions of flame near distant players. Additional Volcanoes may appear near existing volcanoes.</p>
-        </section>
-        <section class="affixes-10">
-            <h4>Level 10/Seasonal Affix</h4>
+        </div>
+        <button class="accordion">Level 10 Affixes - Seasonal</button>
+        <div class="affixes-10">
             <img class="thundericon" src="images/thundericon.jpg" alt="thunder icon">
             <p><b>Thundering</b>  : Enemies have 5% more health. While in combat, players are periodically overcharged with primal power : this power comes with great risk and failure to discharge it quickly can have stunning consequences.</p>
-        </section>
+        </div>
     </main>
     <footer>
         <p>Mythic Int. &copy; 2023 - Kimi Sorensen</p>
         <p><a href="site-plan.html">Site Plan</a></p>
     </footer>
 </div>
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
+    </script>
 </body>
 </html>
