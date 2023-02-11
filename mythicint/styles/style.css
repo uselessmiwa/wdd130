@@ -168,6 +168,41 @@ header {
     overflow: hidden;
 }
 
+.schedule {
+    background-color: #B3AF8F;
+    padding: 10px;
+    box-shadow: 5px 5px 10px #6f7364;
+    border-radius: 5px;
+    margin: 50px;
+    padding-bottom: 30px;
+}
+
+#button-box {
+    text-align: center;
+}
+
+.watch {
+    font-family: 'Aboreto', Helvetica, sans-serif;
+    background-color: #014bad;
+    color: black;
+    font-size: 25px;
+    text-decoration: none;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+
+.watch:hover {
+    color: white;
+}
+
+.schedule-img {
+    border: 5px solid #014bad;
+    margin: 10px;
+    box-shadow: 5px 5px 10px #6f7364;
+    border-radius: 5px;
+}
+
 footer {
     background-color: #014BAD;
     padding: 25px 50px;
